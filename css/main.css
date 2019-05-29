@@ -1,0 +1,39 @@
+.hidden {
+  display: none;
+}
+
+body {
+  background-color: antiquewhite;
+  font-size: 16px;
+  font-family: monospace;
+}
+
+#mixerContainer {
+  background-color: lightcyan;
+  border: 5px solid black;
+  height: 550px;
+
+  margin-left: 200px;
+
+  position: absolute;
+
+  width: 750px;
+}
+
+#instructionsContainer {
+  display: inline-block;
+  position: relative;
+  float: right;
+  width: 290px;
+}
+
+#iconContainer {
+  background-color: azure;
+  border: 3px solid black;
+  height: 45px;
+
+  margin-left: 200px;
+  margin-bottom: 40px;
+  
+  width: 750px;
+}
