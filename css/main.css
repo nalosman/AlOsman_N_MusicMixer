@@ -17,7 +17,7 @@ body {
 
   position: absolute;
 
-  width: 750px;
+  width: 800px;
 }
 
 #instructionsContainer {
@@ -27,13 +27,47 @@ body {
   width: 290px;
 }
 
+#dropHeader {
+  margin-left: 30px;
+}
+
+#dropSection {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 100px;
+
+  background-color: azure;
+  border: 3px solid black;
+  height: 510px;
+
+  margin-left: 50px;
+}
+
+.drop-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: thin dashed black;
+
+  width: 100px;
+  height: 100px;
+
+  background-color: azure;
+}
+
 #iconContainer {
   background-color: azure;
   border: 3px solid black;
-  height: 45px;
+  height: 100px;
 
-  margin-left: 200px;
+  margin-left: 150px;
   margin-bottom: 40px;
-  
-  width: 750px;
+
+  width: 900px;
+}
+
+#iconContainer img {
+  width: 100px;
 }
