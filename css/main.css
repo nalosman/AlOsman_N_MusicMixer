@@ -1,3 +1,4 @@
+/* GENERAL STYLING */
 .hidden {
   display: none;
 }
@@ -5,40 +6,90 @@
 body {
   background-color: antiquewhite;
   font-size: 16px;
-  font-family: monospace;
+}
+
+h2 {
+  color: teal;
+  font-family: 'Old Standard TT', serif;
+  font-size: 45px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: darkseagreen;
+  font-family: 'Old Standard TT', serif;
+  font-size: 35px;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+h4 {
+  color: darkgreen;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#iconContainer {
+  background-color: azure;
+  border: 3px solid black;
+  height: 100px;
+
+  margin: 0 auto;
+
+
+  margin-bottom: 40px;
+
+  width: 800px;
+}
+
+#iconContainer img {
+  width: 12%;
+}
+
+
+/* FLEX CONTAINER STYLING */
+
+#mainFlexContainer {
+  display: flex;
+  justify-content: center;
 }
 
 #mixerContainer {
-  background-color: lightcyan;
+  background-image: url("../images/seaBG.jpg");
+  background-size: cover;
   border: 5px solid black;
-  height: 550px;
+  height: 600px;
+  /* margin-left: 200px; */
 
-  margin-left: 200px;
-
-  position: absolute;
+  /* position: absolute; */
 
   width: 800px;
 }
 
 #instructionsContainer {
-  display: inline-block;
-  position: relative;
-  float: right;
-  width: 290px;
+  /* display: inline-block; */
+   /* position: relative; */
+  /*float: right; */
+  padding-left: 10px;
+  width: 270px;
 }
 
-#dropHeader {
-  margin-left: 30px;
+
+#instructionsContainer li {
+  font-family:'IBM Plex Mono', monospace;
+  font-size: 16px;
 }
 
 #dropSection {
-  display: inline-block;
-  position: relative;
-  float: left;
+  /* display: inline-block; */
+  /* position: relative;
+  float: left; */
   width: 100px;
 
   background-color: azure;
-  border: 3px solid black;
+  border: 2px solid black;
   height: 510px;
 
   margin-left: 50px;
@@ -57,17 +108,21 @@ body {
   background-color: azure;
 }
 
-#iconContainer {
-  background-color: azure;
-  border: 3px solid black;
-  height: 100px;
+.resetButton {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 5%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  letter-spacing: 1px;
 
-  margin-left: 150px;
-  margin-bottom: 40px;
-
-  width: 900px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  width: 102px;
+  height: 50px;
 }
 
-#iconContainer img {
-  width: 100px;
+.resetButton:hover {
+  background-color: darkseagreen;
+  color: white;
 }

@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- <link rel="stylesheet" href="css/reset.css"> -->
+
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Old+Standard+TT&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Interactive Ocean Oasis</title>
 </head>
@@ -20,58 +23,60 @@
 <!-- END APP INTRO TEXT-->
 
 <!-- ALL ICONS CONTAINER-->
-<div id="iconContainer">
-  <img id="icon1" src="images/boat.svg" alt="draggable-piece">
-  <img id="icon2" src="images/bubbles.svg" alt="draggable-piece">
-  <img id="icon3" src="images/calm waves.svg" alt="draggable-piece">
-  <img id="icon4" src="images/crashing waves.svg" alt="draggable-piece">
-  <img id="icon5" src="images/dolphin.svg" alt="draggable-piece">
-  <img id="icon6" src="images/mermaid.svg" alt="draggable-piece">
-  <img id="icon7" src="images/seagull.svg" alt="draggable-piece">
-  <img id="icon8" src="images/whale.svg" alt="draggable-piece">
-  </div>
+    <div id="iconContainer">
+      <img id="icon1" src="images/boatIcon.svg" alt="draggable-piece">
+      <img id="icon2" src="images/bubblesIcon.svg" alt="draggable-piece">
+      <img id="icon3" src="images/calmwavesIcon.svg" alt="draggable-piece">
+      <img id="icon4" src="images/crashingwavesIcon.svg" alt="draggable-piece">
+      <img id="icon5" src="images/dolphinIcon.svg" alt="draggable-piece">
+      <img id="icon6" src="images/mermaidIcon.svg" alt="draggable-piece">
+      <img id="icon7" src="images/seagullIcon.svg" alt="draggable-piece">
+      <img id="icon8" src="images/whaleIcon.svg" alt="draggable-piece">
+      </div>
 <!-- END ALL ICONS CONTAINER-->
+    <section id="mainFlexContainer">
+      <h3 class="hidden">main flex container</h3>
+
+      <aside id="dropSection">
+        <h4 class="hidden">Place Icons here</h4>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <div class="drop-zone"></div>
+        <button class="resetButton"><strong>Reset</strong></button>
+      </aside>
+
+      <section id="mixerContainer">
+        <h3 class="hidden">music mixer container</h3>
+
+        <img src="images/boat.png" alt="row boat">
+        <img src="images/bubbles.png" alt="bubbles">
+        <img src="images/calmWaves.png" alt="calm ocean waves">
+        <img src="images/dolphin.png" alt="dolphin">
+        <img src="images/mermaid.png" alt="mermaid">
+        <img src="images/roughWaves.png" alt="rough ocean wave">
+        <img src="images/seagulls.png" alt="flying seagulls">
+        <img src="images/whale.png" alt="whale">
+
+      </section>
 
 
-    <section id="mixerContainer">
-
-    </section>
-
-    <aside id="dropHeader">
-      <h4>Place Icons here</h4>
-    </aside>
-
-    <aside id="dropSection">
-      <div class="drop-zone"></div>
-  		<div class="drop-zone"></div>
-  		<div class="drop-zone"></div>
-  		<div class="drop-zone"></div>
-      <div class="drop-zone"></div>
-    </aside>
 
 <!-- INSTRUCTIONS CONTAINER-->
-    <aside id="instructionsContainer">
-      <h4 class="subHeading">How to Play</h4>
-      <ol>
-        <li>Choose and icon from the eight below &amp; drag it onto the left panel</li>
-        <li>Music relating to the icon will start to play, and a fun illustration will pop onto the canvas</li>
-        <li>A maximum of 5 icons can be used at a time</li>
-        <li>To empty out the canvas, press the Reset Button</li>
-        <li>Watch the magic unfold and enjoy 🌈</li>
-      </ol>
-    </aside>
+      <aside id="instructionsContainer">
+        <h4 class="subHeading">How to Play</h4>
+        <ol>
+          <li>Choose and icon from the eight below &amp; drag it onto the left panel</li>
+          <li>Music relating to the icon will start to play, and a fun illustration will pop onto the canvas</li>
+          <li>A maximum of 5 icons can be used at a time</li>
+          <li>To empty out the canvas, press the Reset Button</li>
+          <li>Watch the magic unfold and enjoy 🌈</li>
+        </ol>
+      </aside>
 <!-- END INSTRUCTIONS CONTAINER-->
-
-
-
-
-
-
-
-
+    </section> <!--END MAIN FLEX CONTAINER-->
   </main>
-
-
 
 <script src="script/app.js"></script>
 </body>
