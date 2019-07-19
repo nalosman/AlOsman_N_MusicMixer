@@ -5,17 +5,26 @@
 
 	const iconContainer = document.querySelector('#iconContainer'),
 		  dropSection = document.querySelector('#dropSection'),
-		  puzzleSelectors = document.querySelectorAll('#buttonHolder img'),
+		  puzzleSelectors = document.querySelectorAll('.resetButton'),
 		  dropZones = document.querySelectorAll('.drop-zone');
 
 
-	let draggablePieces = document.querySelectorAll("img");
+	let draggablePieces = document.querySelectorAll("#iconContainer img");
 
 	debugger;
 	//
 
 	function switchImage() {
 		console.log(this);
+
+
+		dropZones.forEach(zone => {
+			if (zone.childElementCount === 1) {
+				piece = zone.firstElementChild;
+				iconContainer.appendChild(piece);
+			}
+		});
+
 	}
 
 	puzzleSelectors.forEach(thumbnail => thumbnail.addEventListener("click", switchImage));
@@ -46,6 +55,8 @@
 		zone.addEventListener("drop", function(e) {
 			e.preventDefault();
 			console.log('you dropped sumpin over me');
+
+				if (this.childElementCount == 1) {return;}
 
 			let draggedElement = e.dataTransfer.getData("text/plain");
 			console.log('you dragged: ', draggedElement);
