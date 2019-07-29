@@ -61,6 +61,8 @@ h4 {
   background-size: cover;
   border: 5px solid black;
   height: 600px;
+
+  position: relative;
   /* margin-left: 200px; */
 
   /* position: absolute; */
@@ -125,4 +127,62 @@ h4 {
 .resetButton:hover {
   background-color: darkseagreen;
   color: white;
+}
+
+/* Illustration Styling & CSS Transitions/Transforms */
+#Boat {
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 5px;
+
+}
+
+#Bubbles {
+  position: absolute;
+  z-index: 3;
+  right: 200px;
+  bottom: 10px;
+}
+
+#CalmWaves {
+  position: absolute;
+  z-index: 2;
+  top: 180px;
+}
+
+#Dolphin {
+  position: absolute;
+  z-index: 4;
+  top: 280px;
+  left: 30px;
+}
+
+#Mermaid {
+  position: absolute;
+  z-index: 7;
+  bottom: 50px;
+  left: 5px;
+}
+
+#RoughWaves {
+  position: absolute;
+  z-index: 6;
+  top: 45px;
+  left: 263px;
+}
+
+#Seagulls {
+  position: absolute; 
+  z-index: 5;
+  top: 30px;
+  left: 250px; 
+}
+
+
+#Whale {
+  position: absolute;
+  z-index: 8;
+  bottom: 160px;
+  right: 0px;
 }
