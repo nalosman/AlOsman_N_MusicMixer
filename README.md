@@ -1,14 +1,21 @@
 # Interactive Media Mixer with Fancy Drag & Drop!
+Creating a drag and drop application with vanilla javascript, html5, and css3 using what we've learned in the duration of the semester.
 
 ## Description
-Creating a drag and drop application with javascript, html, and css
+🐳🐬💧🐢🐋⛵️🎶Create Soothing Ocean Waves🎶⛵️🐋🐢💧🐬🐳
 
-## Getting Started
+![Music Mixer Screenshot (images/musicmixerscreenshot.png "Ocean Music Mixer")]
 
-### Dependencies
+An ocean themed music mixer 
 
-Uses Javascript's latest features. Be sure to prefix any bleeding-edge rules, tags, etc.
-Also using latest ES6/next, you should probably think about including Babel for transcription (or an NPM script).
+## How to Play
+
+1. Choose and icon from the eight below &amp; drag it onto the left panel
+2. Music relating to the icon will start to play, and a fun illustration will     pop onto the canvas
+3. A maximum of 5 icons can be used at a time
+4. To empty out the canvas, press the Reset Button
+5. Watch the magic unfold and enjoy 🌈 🦄 🔮
+
 
 ### Installing
 
@@ -16,24 +23,11 @@ cd to the directory of your choice, clone, and hack away!
 
 ## Authors
 
-Contributors names and contact info
+* Ifekitan Obasa - developer
+* Nour Al-Osman - designer
 
-Ifekitan Obasa
-Nour AL-Osman
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details - (MIT is usually fine)
-
-## Acknowledgments
+## Acknowledgments/Credits
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
