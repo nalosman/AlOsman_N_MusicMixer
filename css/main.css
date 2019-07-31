@@ -129,60 +129,145 @@ h4 {
   color: white;
 }
 
-/* Illustration Styling & CSS Transitions/Transforms */
-#Boat {
+/* Illustration Styling & CSS Animations */
+#boat {
   position: absolute;
   z-index: 1;
   left: 10px;
   top: 5px;
 
+  animation-name: boatmove;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-#Bubbles {
+@keyframes boatmove{
+  from{ transform: translateX(0);}
+  to {transform: translateX(75px);}
+}
+
+
+
+#bubbles {
   position: absolute;
   z-index: 3;
   right: 200px;
   bottom: 10px;
+
+  animation-name: bubblemove;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
 }
 
-#CalmWaves {
+@keyframes bubblemove{
+  from{ transform: translateY(10px);}
+  to { transform: translateY(-200px);}
+}
+
+
+
+#calmWaves {
   position: absolute;
   z-index: 2;
   top: 180px;
+
+  animation-name: calmwavesmove;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-#Dolphin {
+@keyframes calmwavesmove {
+  from{ transform: translateX(0);}
+  to {transform: translateX(-2px);}
+}
+
+#dolphin {
   position: absolute;
   z-index: 4;
   top: 280px;
   left: 30px;
+
+  animation-name: dolphinmove;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-#Mermaid {
+@keyframes dolphinmove {
+  to {transform: translateX(30px);}
+  to {transform: translateX(200px);}
+}
+
+#mermaid {
   position: absolute;
   z-index: 7;
   bottom: 50px;
   left: 5px;
+
+  animation-name: mermaidmove;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
 }
 
-#RoughWaves {
+@keyframes mermaidmove{
+  0% {transform: translateX(0);}
+  50% {transform: translateY(50px);}  
+  100%{transform: translateX(200px);}
+}
+
+#roughWaves {
   position: absolute;
   z-index: 6;
   top: 45px;
   left: 263px;
+  animation: roughWavesmove 1.5s alternate infinite;
 }
 
-#Seagulls {
+@keyframes roughWavesmove {
+  0%   {transform: scale(0.9);}
+  100% {transform: scale(1.05);}
+}
+
+#seagulls {
   position: absolute; 
   z-index: 5;
   top: 30px;
   left: 250px; 
+
+  animation: seagullsmove 3s normal infinite;
+
 }
 
+@keyframes seagullsmove {
+  0% {
+    transform: translateX(20px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
 
-#Whale {
+#whale {
   position: absolute;
   z-index: 8;
   bottom: 160px;
   right: 0px;
+
+  animation: whalemove 7s alternate infinite;
+}
+
+@keyframes whalemove {
+  from{ transform: translateX(10px);}
+  to { transform: translateX(-500px);}
 }
