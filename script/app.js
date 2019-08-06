@@ -5,18 +5,18 @@
 
 	const iconContainer = document.querySelector('#iconContainer'),
 		  dropSection = document.querySelector('#dropSection'),
-		  puzzleSelectors = document.querySelectorAll('.resetButton'),
-		  dropZones = document.querySelectorAll('.drop-zone');
+		  reset = document.querySelectorAll('.resetButton'),
+		  dropZones = document.querySelectorAll('.drop-zone'),
+			allAudio = document.querySelectorAll('audio'),
+			mixerContainer = document.querySelectorAll('#mixerContainer'),
+			images = document.querySelectorAll('#mixerContainer img');
 
 
 	let draggablePieces = document.querySelectorAll("#iconContainer img");
 
-	debugger;
-	//
 
-	function switchImage() {
+	function resetImage() {
 		console.log(this);
-
 
 		dropZones.forEach(zone => {
 			if (zone.childElementCount === 1) {
@@ -24,11 +24,17 @@
 				iconContainer.appendChild(piece);
 			}
 		});
+		
+		images.forEach(image => image.classList.add("hidden"));
 
 	}
 
-	puzzleSelectors.forEach(thumbnail => thumbnail.addEventListener("click", switchImage));
+	function resetSound() {
+		 allAudio.forEach(audio => audio.pause());
+ }
 
+	reset.forEach(thumbnail => thumbnail.addEventListener("click", resetImage)),
+	reset.forEach(thumbnail => thumbnail.addEventListener("click", resetSound));
 
 	// loop through the draggable images
 	// this lets us drag stuff => not that hard
@@ -56,14 +62,25 @@
 			e.preventDefault();
 			console.log('you dropped sumpin over me');
 
-				if (this.childElementCount == 1) {return;}
-
 			let draggedElement = e.dataTransfer.getData("text/plain");
 			console.log('you dragged: ', draggedElement);
 
-			// add the image to the drop zone
+			if ( this.childElementCount == 1 ) { return; }
+
+			let audioKey = document.querySelector(`#${draggedElement}`).dataset.key;
+
+			let imgKey = document.querySelector(`#${draggedElement}`).dataset.target;
+
+			let currentAudioClip = document.querySelector((`audio[data-key="${audioKey}"]`));
+			currentAudioClip.play();
+			currentAudioClip.loop = "true";
+
+			let currentImage = document.querySelector(`#${imgKey}`);
+			currentImage.classList.remove("hidden");
+
 			e.target.appendChild(document.querySelector(`#${draggedElement}`));
 		});
 	})
+
 
 })();

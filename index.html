@@ -24,15 +24,15 @@
 
 <!-- ALL ICONS CONTAINER-->
     <div id="iconContainer">
-      <img data-target="boat" id="icon1" src="images/boatIcon.svg" alt="draggable-piece">
-      <img id="icon2" src="images/bubblesIcon.svg" alt="draggable-piece">
-      <img id="icon3" src="images/calmwavesIcon.svg" alt="draggable-piece">
-      <img id="icon4" src="images/crashingwavesIcon.svg" alt="draggable-piece">
-      <img id="icon5" src="images/dolphinIcon.svg" alt="draggable-piece">
-      <img id="icon6" src="images/mermaidIcon.svg" alt="draggable-piece">
-      <img id="icon7" src="images/seagullIcon.svg" alt="draggable-piece">
-      <img id="icon8" src="images/whaleIcon.svg" alt="draggable-piece">
-      </div> <!-- 
+      <img data-key="01" data-target="boat" id="icon1" src="images/boatIcon.svg" alt="draggable-piece">
+      <img data-key="02" data-target="bubbles" id="icon2" src="images/bubblesIcon.svg" alt="draggable-piece">
+      <img data-key="03" data-target="calmWaves" id="icon3" src="images/calmwavesIcon.svg" alt="draggable-piece">
+      <img data-key="04" data-target="roughWaves" id="icon4" src="images/crashingwavesIcon.svg" alt="draggable-piece">
+      <img data-key="05" data-target="dolphin" id="icon5" src="images/dolphinIcon.svg" alt="draggable-piece">
+      <img data-key="06" data-target="mermaid" id="icon6" src="images/mermaidIcon.svg" alt="draggable-piece">
+      <img data-key="07" data-target="seagulls" id="icon7" src="images/seagullIcon.svg" alt="draggable-piece">
+      <img data-key="08" data-target="whale" id="icon8" src="images/whaleIcon.svg" alt="draggable-piece">
+      </div>
 <!-- END ALL ICONS CONTAINER-->
     <section id="mainFlexContainer">
       <h3 class="hidden">main flex container</h3>
@@ -50,21 +50,21 @@
       <section id="mixerContainer">
         <h3 class="hidden">music mixer container</h3>
 
-        <img id="boat" src="images/boat.png" alt="row boat">
-        
-        <img id="bubbles" src="images/bubbles.png" alt="bubbles">
-        
-        <img id="calmWaves" src="images/calmWaves.png" alt="calm ocean waves">
-        
-        <img id="dolphin" src="images/dolphin.png" alt="dolphin">
-        
-        <img id="mermaid" src="images/mermaid.png" alt="mermaid">
-        
-        <img id="roughWaves" src="images/roughWaves.png" alt="rough ocean wave">
-        
-        <img id="seagulls" src="images/seagulls.png" alt="flying seagulls">
-        
-        <img id="whale" src="images/whale.png" alt="whale">
+        <img data-target="boat" class = "hidden" id="boat" src="images/boat.png" alt="row boat">
+
+        <img data-target="bubbles" class = "hidden" id="bubbles" src="images/bubbles.png" alt="bubbles">
+
+        <img data-target="calmWaves" class = "hidden" id="calmWaves" src="images/calmWaves.png" alt="calm ocean waves">
+
+        <img data-target="dolphin" class = "hidden" id="dolphin" src="images/dolphin.png" alt="dolphin">
+
+        <img data-target="mermaid" class = "hidden" id="mermaid" src="images/mermaid.png" alt="mermaid">
+
+        <img data-target="roughWaves" class = "hidden" id="roughWaves" src="images/roughWaves.png" alt="rough ocean wave">
+
+        <img data-target="seagulls" class = "hidden" id="seagulls" src="images/seagulls.png" alt="flying seagulls">
+
+        <img data-target="whale" class = "hidden" id="whale" src="images/whale.png" alt="whale">
       </section>
 
 
@@ -82,6 +82,20 @@
       </aside>
 <!-- END INSTRUCTIONS CONTAINER-->
     </section> <!--END MAIN FLEX CONTAINER-->
+
+
+<!--       AUDIO DATA KEYS       -->
+
+<audio data-key="01" src="audio/boat.mp3"></audio>
+<audio data-key="02" src="audio/bubbles.mp3"></audio>
+<audio data-key="03" src="audio/calmwaves.mp3"></audio>
+<audio data-key="04" src="audio/roughwave.mp3"></audio>
+<audio data-key="05" src="audio/dolphin.mp3"></audio>
+<audio data-key="06" src="audio/mermaid.mp3"></audio>
+<audio data-key="07" src="audio/seagull.mp3"></audio>
+<audio data-key="08" src="audio/whale.mp3"></audio>
+
+
   </main>
 
 <script src="script/app.js"></script>
