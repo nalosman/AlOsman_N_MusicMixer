@@ -4,7 +4,7 @@ Creating a drag and drop application with vanilla javascript, html5, and css3 us
 ## Description
 🐳🐬💧🐢🐋⛵️🎶Create Soothing Ocean Waves🎶⛵️🐋🐢💧🐬🐳
 
-![Music Mixer Screenshot (images/musicmixerscreenshot.png "Ocean Music Mixer")]
+![Music Mixer Screenshot (images/musicmixerscreenshot.png)]
 
 An ocean themed music mixer 
 
@@ -28,10 +28,25 @@ cd to the directory of your choice, clone, and hack away!
 
 
 ## Acknowledgments/Credits
+Seagull Image
+<a href="https://www.freevector.com/free-birds">FreeVector.com</a>
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+Dolphin image credit
+https://www.freepik.com/free-vector/sea-animals-collection_1125276.htm
+<a href="https://www.freepik.com/free-photos-vectors/nature">Nature vector created by anggar3ind - www.freepik.com</a>
+Calm waves attribution
+
+<a href="https://www.freepik.com/free-photos-vectors/abstract">Abstract vector created by freepik - www.freepik.com</a>
+
+Boat attribution
+<a href="https://www.freepik.com/free-photos-vectors/wood">Wood vector created by freepik - www.freepik.com</a>
+
+Ocean background - water and sky
+Graphics by: <a target="_blank" href="https://www.vecteezy.com">www.Vecteezy.com</a>
+
+Mermaid 
+<a rel="nofollow" target="_blank" href="https://www.vecteezy.com">Free Vectors via Vecteezy!</a>
+
+Seagull attribution
+Vector Illustration by <a target="_blank" href="https://www.vecteezy.com/">www.Vecteezy.com</a>
+
