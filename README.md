@@ -4,7 +4,7 @@ Creating a drag and drop application with vanilla javascript, html5, and css3 us
 ## Description
 🐳🐬💧🐢🐋⛵️🎶Create Soothing Ocean Waves🎶⛵️🐋🐢💧🐬🐳
 
-![Music Mixer Screenshot (images/musicmixerscreenshot.png)]
+![Music Mixer Screenshot](images/musicmixerscreenshot.png)
 
 An ocean themed music mixer 
 
